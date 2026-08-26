@@ -80,15 +80,15 @@ h1 { font-size: clamp(58px, 8.4vw, 112px); line-height: .91; letter-spacing: -.0
 .pillars h3 { font-size: 26px; letter-spacing: -.045em; margin: 42px 0 10px; }
 .pillars p { color: var(--muted); line-height: 1.55; max-width: 280px; margin: 0; }
 .icon-orbit, .icon-stack, .icon-spark { height: 115px; margin-top: 62px; position: relative; }
-.icon-orbit { width: 115px; border: 2px solid #c8dafc; border-radius: 50%; }
-.icon-orbit:before, .icon-orbit:after { content: ""; position: absolute; width: 13px; height: 13px; border-radius: 50%; background: var(--blue); top: 15px; right: 4px; }
-.icon-orbit:after { background: var(--green); width: 9px; height: 9px; top: 90px; left: 9px; }
+.icon-orbit { width: 115px; border: 2px solid #d5d5d8; border-radius: 50%; }
+.icon-orbit:before, .icon-orbit:after { content: ""; position: absolute; width: 13px; height: 13px; border-radius: 50%; background: #747479; top: 15px; right: 4px; }
+.icon-orbit:after { background: #b8b8bd; width: 9px; height: 9px; top: 90px; left: 9px; }
 .icon-orbit i { position: absolute; inset: 32px; border-radius: 50%; background: var(--ink); }
 .icon-stack { display: flex; align-items: flex-end; gap: 7px; }
-.icon-stack i { width: 45px; border-radius: 9px; background: var(--red); height: 62px; }
-.icon-stack i:nth-child(2) { background: var(--yellow); height: 92px; }.icon-stack i:nth-child(3) { background: var(--blue); height: 42px; }
-.icon-spark i { position: absolute; left: 48px; top: 0; width: 15px; height: 115px; border-radius: 20px; background: var(--blue); }
-.icon-spark i:nth-child(2) { transform: rotate(45deg); background: var(--red); }.icon-spark i:nth-child(3) { transform: rotate(90deg); background: var(--yellow); }.icon-spark i:nth-child(4) { transform: rotate(135deg); background: var(--green); }
+.icon-stack i { width: 45px; border-radius: 9px; background: #3a3a3c; height: 62px; }
+.icon-stack i:nth-child(2) { background: #8e8e93; height: 92px; }.icon-stack i:nth-child(3) { background: #d1d1d6; height: 42px; }
+.icon-spark i { position: absolute; left: 48px; top: 0; width: 15px; height: 115px; border-radius: 20px; background: #2d2d2f; }
+.icon-spark i:nth-child(2) { transform: rotate(45deg); background: #616166; }.icon-spark i:nth-child(3) { transform: rotate(90deg); background: #9d9da2; }.icon-spark i:nth-child(4) { transform: rotate(135deg); background: #d8d8dc; }
 
 .final-cta { background: var(--ink); color: white; border-radius: 36px; min-height: 650px; padding: 78px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .final-cta .brand-mark { width: 72px; height: 72px; margin-bottom: 34px; }
