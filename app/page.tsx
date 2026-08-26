@@ -33,7 +33,7 @@ function GdgMark() {
 
 function CampusMap() {
   return (
-    <section className="campus-map shell" aria-labelledby="campus-map-title">
+    <section className="campus-map shell" id="map" aria-labelledby="campus-map-title">
       <div className="map-heading">
         <div>
           <p className="section-label">THE VENUE</p>
@@ -72,6 +72,7 @@ export default function Home() {
 
         <div className="nav-links">
           <a href="#details">Details</a>
+          <a href="#map">Map</a>
           <a href="#faqs">FAQs</a>
           <a className="nav-apply" href={APPLY_URL} target="_blank" rel="noreferrer">
             Apply
