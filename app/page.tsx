@@ -90,13 +90,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="manifesto shell" id="about">
-        <p className="section-label">ONE DAY. THREE MOVES.</p>
-        <h2>Idea to<br />impact.</h2>
-        <p>Meet. Make. Share.</p>
-      </section>
-
-      <section className="pillars shell" aria-label="Event highlights">
+      <section className="pillars shell" id="about" aria-label="Event highlights">
         <article>
           <span className="pillar-number">01</span>
           <div className="icon-orbit blue-orbit"><i /></div>

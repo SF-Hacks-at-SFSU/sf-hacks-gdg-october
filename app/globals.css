@@ -73,12 +73,9 @@ h1 { font-size: clamp(58px, 8.4vw, 112px); line-height: .91; letter-spacing: -.0
 .event-meta div { display: grid; gap: 7px; }
 .event-meta strong { font-size: 14px; font-weight: 600; }
 
-.manifesto { padding-block: 220px 145px; display: grid; grid-template-columns: 1fr 2.2fr 1.4fr; gap: 56px; align-items: start; }
 .section-label { font-size: 11px; color: var(--muted); letter-spacing: .14em; font-weight: 800; margin-top: 12px; }
-.manifesto h2 { font-size: clamp(48px, 6vw, 78px); line-height: .96; letter-spacing: -.065em; margin: 0; }
-.manifesto > p:last-child { color: var(--muted); font-size: 18px; line-height: 1.55; letter-spacing: -.02em; margin: 8px 0 0; }
 
-.pillars { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); margin-bottom: 210px; }
+.pillars { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); margin-top: 180px; margin-bottom: 210px; }
 .pillars article { min-height: 420px; padding: 28px 34px 35px 0; position: relative; border-right: 1px solid var(--line); }
 .pillars article + article { padding-left: 34px; }
 .pillars article:last-child { border-right: 0; }
@@ -119,8 +116,6 @@ footer .wordmark { color: var(--ink); }
 @media (max-width: 900px) {
   .event-panel { grid-template-columns: 110px 1fr; }
   .event-meta { grid-column: 1 / -1; border-left: 0; border-top: 1px solid #d5d5d7; padding: 24px 0 0; grid-template-columns: 1fr 1fr; }
-  .manifesto { grid-template-columns: 1fr; padding-block: 150px 100px; }
-  .manifesto .section-label { margin: 0; }
   .faq { grid-template-columns: 1fr; gap: 58px; }
   .faq-intro { position: static; }
 }
@@ -140,8 +135,7 @@ footer .wordmark { color: var(--ink); }
   .event-panel { padding: 22px; border-radius: 25px; grid-template-columns: 82px 1fr; gap: 20px; }
   .date-tile { border-radius: 17px; }.date-tile strong { font-size: 40px; }
   .event-heading h2 { font-size: 25px; }.event-meta { grid-template-columns: 1fr; }
-  .manifesto { padding-top: 140px; gap: 32px; }
-  .pillars { grid-template-columns: 1fr; margin-bottom: 135px; }
+  .pillars { grid-template-columns: 1fr; margin-top: 110px; margin-bottom: 135px; }
   .pillars article, .pillars article + article { min-height: 340px; padding: 26px 0 36px; border-right: 0; border-bottom: 1px solid var(--line); }
   .icon-orbit, .icon-stack, .icon-spark { margin-top: 45px; }
   .pillars h3 { margin-top: 28px; }
