@@ -1,7 +1,5 @@
 const APPLY_URL = "https://tally.so/r/RG2rP4";
 
-const Arrow = () => <span aria-hidden="true">↗</span>;
-
 function BrandMark() {
   return (
     <span className="brand-mark" aria-hidden="true">
@@ -25,7 +23,7 @@ export default function Home() {
           <a href="#about">About</a>
           <a href="#details">Details</a>
           <a className="nav-apply" href={APPLY_URL} target="_blank" rel="noreferrer">
-            Apply <Arrow />
+            Apply
           </a>
         </div>
       </nav>
@@ -41,9 +39,9 @@ export default function Home() {
         </p>
         <div className="hero-actions">
           <a className="button button-primary" href={APPLY_URL} target="_blank" rel="noreferrer">
-            Apply to hack <Arrow />
+            Apply to hack
           </a>
-          <a className="button button-secondary" href="#details">See the details ↓</a>
+          <a className="button button-secondary" href="#details">See the details</a>
         </div>
         <p className="microcopy">Free · All levels welcome</p>
 
@@ -98,7 +96,7 @@ export default function Home() {
         <p>OCTOBER 02 · SAN FRANCISCO</p>
         <h2>Build<br />with us.</h2>
         <a className="button button-light" href={APPLY_URL} target="_blank" rel="noreferrer">
-          Apply now <Arrow />
+          Apply now
         </a>
       </section>
 
