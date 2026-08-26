@@ -111,9 +111,7 @@ h1 { font-size: clamp(58px, 8.4vw, 112px); line-height: .91; letter-spacing: -.0
 .faq-list a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
 
 .final-cta { background: var(--ink); color: white; border-radius: 36px; min-height: 650px; padding: 78px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; }
-.final-cta .brand-mark { width: 72px; height: 72px; margin-bottom: 34px; }
-.final-cta > p { color: #a7a7ad; font-size: 11px; font-weight: 800; letter-spacing: .14em; }
-.final-cta h2 { font-size: clamp(60px, 7vw, 96px); line-height: .92; letter-spacing: -.07em; margin: 20px 0 38px; }
+.final-cta h2 { font-size: clamp(60px, 7vw, 96px); line-height: .92; letter-spacing: -.07em; margin: 0 0 38px; }
 .button-light { background: #fff; color: var(--ink); min-width: 150px; }
 footer { min-height: 180px; display: flex; align-items: center; justify-content: space-between; color: var(--muted); font-size: 13px; }
 footer .wordmark { color: var(--ink); }

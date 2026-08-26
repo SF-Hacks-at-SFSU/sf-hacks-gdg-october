@@ -142,8 +142,6 @@ export default function Home() {
       </section>
 
       <section className="final-cta shell">
-        <BrandMark />
-        <p>OCTOBER 02 · SAN FRANCISCO</p>
         <h2>Build<br />with us.</h2>
         <a className="button button-light" href={APPLY_URL} target="_blank" rel="noreferrer">
           Apply now
