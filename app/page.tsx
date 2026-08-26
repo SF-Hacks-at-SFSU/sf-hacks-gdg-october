@@ -8,6 +8,14 @@ function BrandMark() {
   );
 }
 
+function GdgMark() {
+  return (
+    <span className="gdg-mark" role="img" aria-label="Google Developer Groups">
+      <img src="/gdg-logo.png" alt="" />
+    </span>
+  );
+}
+
 export default function Home() {
   return (
     <main>
@@ -16,7 +24,7 @@ export default function Home() {
           <BrandMark />
           <span>SF Hacks</span>
           <span className="nav-divider" />
-          <span className="gdg-label">GDG</span>
+          <GdgMark />
         </a>
 
         <div className="nav-links">
