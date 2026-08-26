@@ -60,13 +60,18 @@ export default function Home() {
         <p className="hero-copy">
           One day. One team. Build with AI.
         </p>
+        <div className="hero-facts" aria-label="Event date, time, and location">
+          <span><small>Date</small><strong>Oct 02</strong></span>
+          <span><small>Hours</small><strong>9–7</strong></span>
+          <span><small>Place</small><strong>San Francisco</strong></span>
+        </div>
         <div className="hero-actions">
           <a className="button button-primary" href={APPLY_URL} target="_blank" rel="noreferrer">
             Apply to hack
           </a>
           <a className="button button-secondary" href="#details">See the details</a>
         </div>
-        <p className="microcopy">Free · All levels welcome</p>
+        <p className="microcopy"><span className="status-dot" />Applications open <span>·</span> Free to attend</p>
 
         <div className="event-panel" id="details">
           <div className="date-tile">
