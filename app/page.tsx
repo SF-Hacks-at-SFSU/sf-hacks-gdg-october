@@ -62,7 +62,7 @@ export default function Home() {
         <div className="hero-facts" aria-label="Event date, time, and location">
           <span><small>Date</small><strong>Oct 02</strong></span>
           <span><small>Hours</small><strong>9 AM to 7 PM</strong></span>
-          <span><small>Place</small><strong>Annex 1</strong></span>
+          <span><small>Place</small><strong>San Francisco State University, Annex 1</strong></span>
         </div>
         <div className="hero-actions">
           <a className="button button-primary" href={APPLY_URL} target="_blank" rel="noreferrer">
@@ -84,7 +84,7 @@ export default function Home() {
           </div>
           <div className="event-meta">
             <div><span>WHEN</span><strong>9:00 AM — 7:00 PM</strong></div>
-            <div><span>WHERE</span><strong>Annex 1 · San Francisco</strong></div>
+            <div><span>WHERE</span><strong>San Francisco State University, Annex 1</strong></div>
           </div>
         </div>
       </section>
