@@ -51,37 +51,40 @@ export default function Home() {
         </div>
       </nav>
 
-      <section className="hero shell" id="top">
-        <div className="eyebrow"><span>SF Hacks</span><span className="eyebrow-x">×</span><span>GDG</span></div>
-        <h1>
-          AI
-          <span className="color-word">Hackathon</span>
-        </h1>
-        <p className="hero-copy">
-          One day. One team. Build with AI.
-        </p>
-        <div className="hero-actions">
-          <a className="button button-primary" href={APPLY_URL} target="_blank" rel="noreferrer">
-            Apply to hack
-          </a>
-          <a className="button button-secondary" href="#details">See the details</a>
-        </div>
-        <p className="microcopy">Free · All levels welcome</p>
+      <section className="hero" id="top">
+        <div className="hero-content">
+          <div className="eyebrow">SF Hacks <span>×</span> GDG</div>
+          <h1>AI Hackathon</h1>
+          <p className="hero-copy">One day to build what matters.</p>
+          <p className="hero-date">October 2, 2026 · San Francisco</p>
+          <div className="hero-actions">
+            <a className="button button-primary" href={APPLY_URL} target="_blank" rel="noreferrer">
+              Apply to hack
+            </a>
+            <a className="button button-secondary" href="#details">Event details</a>
+          </div>
 
-        <div className="event-panel" id="details">
-          <div className="date-tile">
-            <span>OCT</span>
-            <strong>02</strong>
-            <span>2026</span>
+          <div className="hero-visual" aria-label="SF Hacks and Google Developer Groups">
+            <span className="hero-sf-logo"><img src="/sfhacks-logo.png" alt="SF Hacks" /></span>
+            <span className="hero-cross">×</span>
+            <span className="hero-gdg-logo"><GdgMark /></span>
           </div>
-          <div className="event-heading">
-            <span className="kicker">Friday in San Francisco</span>
-            <h2>12 hours. Build. Ship.</h2>
-          </div>
-          <div className="event-meta">
-            <div><span>WHEN</span><strong>9:00 AM — 9:00 PM</strong></div>
-            <div><span>WHERE</span><strong>San Francisco · Venue TBA</strong></div>
-          </div>
+        </div>
+      </section>
+
+      <section className="event-panel shell" id="details">
+        <div className="date-tile">
+          <span>OCT</span>
+          <strong>02</strong>
+          <span>2026</span>
+        </div>
+        <div className="event-heading">
+          <span className="kicker">Friday in San Francisco</span>
+          <h2>12 hours. Build. Ship.</h2>
+        </div>
+        <div className="event-meta">
+          <div><span>WHEN</span><strong>9:00 AM — 9:00 PM</strong></div>
+          <div><span>WHERE</span><strong>San Francisco · Venue TBA</strong></div>
         </div>
       </section>
 
