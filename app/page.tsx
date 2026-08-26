@@ -22,7 +22,6 @@ export default function Home() {
       <nav className="nav shell" aria-label="Main navigation">
         <a className="wordmark" href="#top" aria-label="SF Hacks mini home">
           <BrandMark />
-          <span>SF Hacks</span>
           <span className="nav-divider" />
           <GdgMark />
         </a>
