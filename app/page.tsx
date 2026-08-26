@@ -76,10 +76,10 @@ export default function Home() {
           </div>
           <div className="event-heading">
             <span className="kicker">Friday in San Francisco</span>
-            <h2>12 hours. Build. Ship.</h2>
+            <h2>10 hours. Build. Ship.</h2>
           </div>
           <div className="event-meta">
-            <div><span>WHEN</span><strong>9:00 AM — 9:00 PM</strong></div>
+            <div><span>WHEN</span><strong>9:00 AM — 7:00 PM</strong></div>
             <div><span>WHERE</span><strong>San Francisco · Venue TBA</strong></div>
           </div>
         </div>
