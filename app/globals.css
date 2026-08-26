@@ -82,16 +82,19 @@ h1 { font-size: clamp(58px, 8.4vw, 112px); line-height: .91; letter-spacing: -.0
 .pillar-number { color: #a1a1a5; font-size: 12px; }
 .pillars h3 { font-size: 26px; letter-spacing: -.045em; margin: 42px 0 10px; }
 .pillars p { color: var(--muted); line-height: 1.55; max-width: 280px; margin: 0; }
+.pillars article:nth-child(1) .pillar-number { color: #4285f4; }
+.pillars article:nth-child(2) .pillar-number { color: #8a63d2; }
+.pillars article:nth-child(3) .pillar-number { color: #ea4335; }
 .icon-orbit, .icon-stack, .icon-spark { height: 115px; margin-top: 62px; position: relative; }
-.icon-orbit { width: 115px; border: 2px solid #d5d5d8; border-radius: 50%; }
-.icon-orbit:before, .icon-orbit:after { content: ""; position: absolute; width: 13px; height: 13px; border-radius: 50%; background: #747479; top: 15px; right: 4px; }
-.icon-orbit:after { background: #b8b8bd; width: 9px; height: 9px; top: 90px; left: 9px; }
-.icon-orbit i { position: absolute; inset: 32px; border-radius: 50%; background: var(--ink); }
+.icon-orbit { width: 115px; border: 2px solid #c9d9ff; border-radius: 50%; }
+.icon-orbit:before, .icon-orbit:after { content: ""; position: absolute; width: 13px; height: 13px; border-radius: 50%; background: #4285f4; top: 15px; right: 4px; }
+.icon-orbit:after { background: #34a853; width: 9px; height: 9px; top: 90px; left: 9px; }
+.icon-orbit i { position: absolute; inset: 32px; border-radius: 50%; background: #17163f; }
 .icon-stack { display: flex; align-items: flex-end; gap: 7px; }
-.icon-stack i { width: 45px; border-radius: 9px; background: #3a3a3c; height: 62px; }
-.icon-stack i:nth-child(2) { background: #8e8e93; height: 92px; }.icon-stack i:nth-child(3) { background: #d1d1d6; height: 42px; }
-.icon-spark i { position: absolute; left: 48px; top: 0; width: 15px; height: 115px; border-radius: 20px; background: #2d2d2f; }
-.icon-spark i:nth-child(2) { transform: rotate(45deg); background: #616166; }.icon-spark i:nth-child(3) { transform: rotate(90deg); background: #9d9da2; }.icon-spark i:nth-child(4) { transform: rotate(135deg); background: #d8d8dc; }
+.icon-stack i { width: 45px; border-radius: 9px; background: #17163f; height: 62px; }
+.icon-stack i:nth-child(2) { background: #8a63d2; height: 92px; }.icon-stack i:nth-child(3) { background: #f06a4a; height: 42px; }
+.icon-spark i { position: absolute; left: 48px; top: 0; width: 15px; height: 115px; border-radius: 20px; background: #17163f; }
+.icon-spark i:nth-child(2) { transform: rotate(45deg); background: #5c72dc; }.icon-spark i:nth-child(3) { transform: rotate(90deg); background: #ea4335; }.icon-spark i:nth-child(4) { transform: rotate(135deg); background: #fbbc04; }
 
 .faq { padding-bottom: 220px; display: grid; grid-template-columns: 1fr 2.4fr; gap: 72px; align-items: start; }
 .faq-intro { position: sticky; top: 48px; }
