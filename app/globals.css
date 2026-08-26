@@ -35,7 +35,7 @@ a { color: inherit; text-decoration: none; }
 }
 .wordmark { display: flex; align-items: center; gap: 14px; font-weight: 650; letter-spacing: -.02em; }
 .brand-mark { width: 36px; height: 36px; display: inline-flex; flex: 0 0 auto; }
-.brand-mark img { width: 100%; height: 100%; display: block; object-fit: contain; border-radius: 8px; }
+.brand-mark img { width: 100%; height: 100%; display: block; object-fit: contain; }
 .nav-divider { height: 24px; width: 1px; background: #c9c9c9; margin-inline: 2px; }
 .gdg-mark { width: 72px; height: 38px; display: inline-block; overflow: hidden; position: relative; flex: 0 0 auto; }
 .gdg-mark img { position: absolute; width: 300px; height: auto; max-width: none; left: -18px; top: -66px; }
