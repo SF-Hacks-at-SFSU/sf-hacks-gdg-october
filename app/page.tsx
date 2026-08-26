@@ -39,12 +39,18 @@ function CampusMap() {
           <p className="section-label">THE VENUE</p>
           <h2 id="campus-map-title">Find Annex 1.</h2>
         </div>
-        <p>Northwest campus<br />at North State Drive</p>
+        <div className="map-heading-side">
+          <p>San Francisco State University<br />Annex 1</p>
+          <div className="map-links" aria-label="Open location in a maps app">
+            <a href="https://maps.apple.com/?q=Annex+1%2C+San+Francisco+State+University" target="_blank" rel="noreferrer">Apple Maps</a>
+            <a className="map-link-primary" href="https://www.google.com/maps/search/?api=1&query=San+Francisco+State+University+Annex+1" target="_blank" rel="noreferrer">Google Maps</a>
+          </div>
+        </div>
       </div>
       <div className="google-map">
         <iframe
           title="Google Maps location for San Francisco State University Annex 1"
-          src="https://www.google.com/maps?q=San+Francisco+State+University+Annex+1&output=embed"
+          src="https://www.google.com/maps?q=San+Francisco+State+University+Annex+1&z=17&output=embed"
           loading="lazy"
           allowFullScreen
           referrerPolicy="no-referrer-when-downgrade"
