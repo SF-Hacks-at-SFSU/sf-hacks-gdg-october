@@ -31,6 +31,62 @@ function GdgMark() {
   );
 }
 
+function CampusMap() {
+  return (
+    <section className="campus-map shell" aria-labelledby="campus-map-title">
+      <div className="map-heading">
+        <div>
+          <p className="section-label">THE VENUE</p>
+          <h2 id="campus-map-title">Find Annex 1.</h2>
+        </div>
+        <p>Northwest campus<br />at North State Drive</p>
+      </div>
+
+      <div className="map-canvas" role="img" aria-label="Simplified campus map showing Annex 1 at San Francisco State University">
+        <div className="map-ground ground-north" />
+        <div className="map-ground ground-west" />
+        <div className="map-ground ground-center" />
+        <div className="map-ground ground-east" />
+
+        <div className="map-road road-winston"><span>Winston Drive</span></div>
+        <div className="map-road road-lake"><span>Lake Merced Blvd</span></div>
+        <div className="map-road road-north-state"><span>North State Drive</span></div>
+        <div className="map-road road-state"><span>State Drive</span></div>
+        <div className="map-road road-campus" />
+
+        <div className="map-path path-one" />
+        <div className="map-path path-two" />
+        <div className="map-path path-three" />
+        <div className="map-path path-four" />
+        <div className="map-path path-five" />
+        <div className="map-path path-six" />
+
+        <div className="map-building childrens"><span>Children&apos;s<br />Campus</span></div>
+        <div className="map-building annex-two"><span>Annex II</span></div>
+        <div className="map-building annex-one">
+          <span className="map-pin"><i /></span>
+          <strong>ANNEX 1</strong>
+        </div>
+        <div className="map-building events"><span>Student Events<br />Center</span></div>
+        <div className="map-building corporation"><span>Corporation Yard</span></div>
+        <div className="map-building parking"><span>Parking<br />Garage</span></div>
+        <div className="map-building mary"><span>Mary Park Hall</span></div>
+        <div className="map-building towers"><span>The Towers</span></div>
+        <div className="map-building student"><span>Student<br />Center</span></div>
+        <div className="map-building fine-arts"><span>Fine Arts</span></div>
+        <div className="map-building library"><span>Library</span></div>
+        <div className="map-building gym"><span>Gymnasium</span></div>
+
+        <div className="map-field maloney"><span>Maloney Field</span></div>
+        <div className="map-field stadium"><span>Cox Stadium</span></div>
+        <div className="map-field tennis"><span>Tennis</span></div>
+
+        <div className="map-key"><span className="key-dot" />Annex 1</div>
+      </div>
+    </section>
+  );
+}
+
 export default function Home() {
   return (
     <main>
@@ -88,6 +144,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <CampusMap />
 
       <section className="faq shell" id="faqs">
         <div className="faq-intro">
