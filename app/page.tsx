@@ -86,31 +86,29 @@ export default function Home() {
       </section>
 
       <section className="manifesto shell" id="about">
-        <p className="section-label">SMALL BY DESIGN</p>
-        <h2>Make<br />something.</h2>
-        <p>
-          Find a team. Build fast. Demo by night.
-        </p>
+        <p className="section-label">ONE DAY. THREE MOVES.</p>
+        <h2>Idea to<br />impact.</h2>
+        <p>Meet. Make. Share.</p>
       </section>
 
       <section className="pillars shell" aria-label="Event highlights">
         <article>
           <span className="pillar-number">01</span>
           <div className="icon-orbit blue-orbit"><i /></div>
-          <h3>Team up</h3>
-          <p>Come together around an idea.</p>
+          <h3>Connect</h3>
+          <p>Meet teammates and shape one idea.</p>
         </article>
         <article>
           <span className="pillar-number">02</span>
           <div className="icon-stack"><i /><i /><i /></div>
-          <h3>Build</h3>
-          <p>Get support when you need it.</p>
+          <h3>Create</h3>
+          <p>Build with mentors and AI tools.</p>
         </article>
         <article>
           <span className="pillar-number">03</span>
           <div className="icon-spark"><i /><i /><i /><i /></div>
-          <h3>Demo</h3>
-          <p>Show what you made.</p>
+          <h3>Present</h3>
+          <p>Demo what works—and what you learned.</p>
         </article>
       </section>
 
