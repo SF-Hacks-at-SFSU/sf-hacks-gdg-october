@@ -53,8 +53,8 @@ export default function Home() {
       <section className="hero shell" id="top">
         <div className="eyebrow"><span>SF Hacks</span><span className="eyebrow-x">×</span><span>GDG</span></div>
         <h1>
-          AI
-          <span className="color-word">Hackathon</span>
+          <span className="title-ai">AI</span>
+          <span>Hackathon</span>
         </h1>
         <p className="hero-copy">
           One day. One team. Build with AI.
