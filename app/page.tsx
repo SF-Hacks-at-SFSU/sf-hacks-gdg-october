@@ -42,7 +42,6 @@ export default function Home() {
         </a>
 
         <div className="nav-links">
-          <a href="#about">About</a>
           <a href="#details">Details</a>
           <a href="#faqs">FAQs</a>
           <a className="nav-apply" href={APPLY_URL} target="_blank" rel="noreferrer">
@@ -88,27 +87,6 @@ export default function Home() {
             <div><span>WHERE</span><strong>San Francisco · Venue TBA</strong></div>
           </div>
         </div>
-      </section>
-
-      <section className="pillars shell" id="about" aria-label="Event highlights">
-        <article>
-          <span className="pillar-number">01</span>
-          <div className="icon-orbit blue-orbit"><i /></div>
-          <h3>Connect</h3>
-          <p>Meet teammates and shape one idea.</p>
-        </article>
-        <article>
-          <span className="pillar-number">02</span>
-          <div className="icon-stack"><i /><i /><i /></div>
-          <h3>Create</h3>
-          <p>Build with mentors and AI tools.</p>
-        </article>
-        <article>
-          <span className="pillar-number">03</span>
-          <div className="icon-spark"><i /><i /><i /><i /></div>
-          <h3>Present</h3>
-          <p>Demo what works—and what you learned.</p>
-        </article>
       </section>
 
       <section className="faq shell" id="faqs">

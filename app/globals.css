@@ -75,28 +75,7 @@ h1 { font-size: clamp(58px, 8.4vw, 112px); line-height: .91; letter-spacing: -.0
 
 .section-label { font-size: 11px; color: var(--muted); letter-spacing: .14em; font-weight: 800; margin-top: 12px; }
 
-.pillars { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); margin-top: 180px; margin-bottom: 210px; }
-.pillars article { min-height: 420px; padding: 28px 34px 35px 0; position: relative; border-right: 1px solid var(--line); }
-.pillars article + article { padding-left: 34px; }
-.pillars article:last-child { border-right: 0; }
-.pillar-number { color: #a1a1a5; font-size: 12px; }
-.pillars h3 { font-size: 26px; letter-spacing: -.045em; margin: 42px 0 10px; }
-.pillars p { color: var(--muted); line-height: 1.55; max-width: 280px; margin: 0; }
-.pillars article:nth-child(1) .pillar-number { color: #4285f4; }
-.pillars article:nth-child(2) .pillar-number { color: #8a63d2; }
-.pillars article:nth-child(3) .pillar-number { color: #ea4335; }
-.icon-orbit, .icon-stack, .icon-spark { height: 115px; margin-top: 62px; position: relative; }
-.icon-orbit { width: 115px; border: 2px solid #c9d9ff; border-radius: 50%; }
-.icon-orbit:before, .icon-orbit:after { content: ""; position: absolute; width: 13px; height: 13px; border-radius: 50%; background: #4285f4; top: 15px; right: 4px; }
-.icon-orbit:after { background: #34a853; width: 9px; height: 9px; top: 90px; left: 9px; }
-.icon-orbit i { position: absolute; inset: 32px; border-radius: 50%; background: #17163f; }
-.icon-stack { display: flex; align-items: flex-end; gap: 7px; }
-.icon-stack i { width: 45px; border-radius: 9px; background: #17163f; height: 62px; }
-.icon-stack i:nth-child(2) { background: #8a63d2; height: 92px; }.icon-stack i:nth-child(3) { background: #f06a4a; height: 42px; }
-.icon-spark i { position: absolute; left: 48px; top: 0; width: 15px; height: 115px; border-radius: 20px; background: #17163f; }
-.icon-spark i:nth-child(2) { transform: rotate(45deg); background: #5c72dc; }.icon-spark i:nth-child(3) { transform: rotate(90deg); background: #ea4335; }.icon-spark i:nth-child(4) { transform: rotate(135deg); background: #fbbc04; }
-
-.faq { padding-bottom: 220px; display: grid; grid-template-columns: 1fr 2.4fr; gap: 72px; align-items: start; }
+.faq { padding-block: 180px 220px; display: grid; grid-template-columns: 1fr 2.4fr; gap: 72px; align-items: start; }
 .faq-intro { position: sticky; top: 48px; }
 .faq-intro .section-label { margin: 0 0 24px; }
 .faq-intro h2 { margin: 0; font-size: clamp(58px, 7vw, 92px); line-height: .9; letter-spacing: -.07em; }
@@ -138,11 +117,7 @@ footer .wordmark { color: var(--ink); }
   .event-panel { padding: 22px; border-radius: 25px; grid-template-columns: 82px 1fr; gap: 20px; }
   .date-tile { border-radius: 17px; }.date-tile strong { font-size: 40px; }
   .event-heading h2 { font-size: 25px; }.event-meta { grid-template-columns: 1fr; }
-  .pillars { grid-template-columns: 1fr; margin-top: 110px; margin-bottom: 135px; }
-  .pillars article, .pillars article + article { min-height: 340px; padding: 26px 0 36px; border-right: 0; border-bottom: 1px solid var(--line); }
-  .icon-orbit, .icon-stack, .icon-spark { margin-top: 45px; }
-  .pillars h3 { margin-top: 28px; }
-  .faq { padding-bottom: 135px; gap: 48px; }
+  .faq { padding-block: 110px 135px; gap: 48px; }
   .faq-list summary { grid-template-columns: 36px 1fr auto; padding: 24px 0; gap: 12px; }
   .faq-list details > p { margin: -2px 0 26px 48px; font-size: 15px; }
   .final-cta { border-radius: 27px; min-height: 560px; padding: 35px 20px; }
