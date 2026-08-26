@@ -1,5 +1,20 @@
 const APPLY_URL = "https://tally.so/r/RG2rP4";
 
+const FAQS = [
+  ["What is a hackathon?", "A short build sprint where people team up and turn ideas into working projects."],
+  ["Can beginners participate?", "Yes. No hackathon experience is required."],
+  ["Do I need to know how to code?", "No. All skill levels and backgrounds are welcome."],
+  ["Are travel costs covered?", "No. We are not able to reimburse travel costs."],
+  ["Can I work solo?", "Yes. You can build alone or join a team of up to four."],
+  ["Who will be there?", "Builders, mentors, organizers, and community partners."],
+  ["Is there a theme?", "Yes. We’ll reveal it closer to the event."],
+  ["Where can I find project ideas?", "Browse past hackathon projects on Devpost for inspiration."],
+  ["How should I prepare?", "Bring an idea, your laptop, a charger, and an open mind."],
+  ["Is there a code of conduct?", "Yes. Everyone must follow the MLH Code of Conduct."],
+  ["Will there be other activities?", "Expect short workshops, mentor sessions, and demos."],
+  ["How can I contact the team?", "Email sfhacksteam@gmail.com."],
+] as const;
+
 function BrandMark() {
   return (
     <span className="brand-mark" aria-hidden="true">
@@ -29,6 +44,7 @@ export default function Home() {
         <div className="nav-links">
           <a href="#about">About</a>
           <a href="#details">Details</a>
+          <a href="#faqs">FAQs</a>
           <a className="nav-apply" href={APPLY_URL} target="_blank" rel="noreferrer">
             Apply
           </a>
@@ -96,6 +112,30 @@ export default function Home() {
           <h3>Demo</h3>
           <p>Show what you made.</p>
         </article>
+      </section>
+
+      <section className="faq shell" id="faqs">
+        <div className="faq-intro">
+          <p className="section-label">NEED TO KNOW</p>
+          <h2>FAQs</h2>
+        </div>
+        <div className="faq-list">
+          {FAQS.map(([question, answer], index) => (
+            <details key={question}>
+              <summary>
+                <span className="faq-number">{String(index + 1).padStart(2, "0")}</span>
+                <span>{question}</span>
+              </summary>
+              <p>
+                {question === "Is there a code of conduct?" ? (
+                  <>Yes. Everyone must follow the <a href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md" target="_blank" rel="noreferrer">MLH Code of Conduct</a>.</>
+                ) : question === "How can I contact the team?" ? (
+                  <>Email <a href="mailto:sfhacksteam@gmail.com">sfhacksteam@gmail.com</a>.</>
+                ) : answer}
+              </p>
+            </details>
+          ))}
+        </div>
       </section>
 
       <section className="final-cta shell">
