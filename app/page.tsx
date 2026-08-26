@@ -62,7 +62,7 @@ export default function Home() {
         </p>
         <div className="hero-facts" aria-label="Event date, time, and location">
           <span><small>Date</small><strong>Oct 02</strong></span>
-          <span><small>Hours</small><strong>9–7</strong></span>
+          <span><small>Hours</small><strong>9 AM to 7 PM</strong></span>
           <span><small>Place</small><strong>San Francisco</strong></span>
         </div>
         <div className="hero-actions">
