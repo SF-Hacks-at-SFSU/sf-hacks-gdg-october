@@ -34,10 +34,10 @@ export default function Home() {
       </nav>
 
       <section className="hero shell" id="top">
-        <div className="eyebrow"><span>One room</span><i /><span>One day</span><i /><span>Big ideas</span></div>
+        <div className="eyebrow"><span>SF Hacks</span><span className="eyebrow-x">×</span><span>GDG</span></div>
         <h1>
-          Build something
-          <span className="color-word">unexpected.</span>
+          AI
+          <span className="color-word">Hackathon</span>
         </h1>
         <p className="hero-copy">
           A focused, one-day mini hackathon from SF Hacks and Google Developer

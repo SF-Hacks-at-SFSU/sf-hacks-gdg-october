@@ -18,8 +18,8 @@ export async function generateMetadata(): Promise<Metadata> {
   const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host") ?? "october.sfhacks.io";
   const protocol = requestHeaders.get("x-forwarded-proto") ?? (host.includes("localhost") ? "http" : "https");
   const base = new URL(`${protocol}://${host}`);
-  const title = "SF Hacks × GDG — Mini Hackathon";
-  const description = "A one-day mini hackathon for curious builders in San Francisco on October 2, 2026.";
+  const title = "SF Hacks × GDG — AI Hackathon";
+  const description = "A one-day AI hackathon for curious builders in San Francisco on October 2, 2026.";
 
   return {
     metadataBase: base,
@@ -30,13 +30,13 @@ export async function generateMetadata(): Promise<Metadata> {
       title,
       description,
       type: "website",
-      images: [{ url: new URL("/og.png", base).toString(), width: 1200, height: 630, alt: "SF Hacks × GDG Mini Hackathon" }],
+      images: [{ url: new URL("/og-v2.png", base).toString(), width: 1200, height: 630, alt: "SF Hacks × GDG AI Hackathon" }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [new URL("/og.png", base).toString()],
+      images: [new URL("/og-v2.png", base).toString()],
     },
   };
 }
