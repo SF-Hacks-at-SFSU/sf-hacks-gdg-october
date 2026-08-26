@@ -5,10 +5,7 @@ const Arrow = () => <span aria-hidden="true">↗</span>;
 function BrandMark() {
   return (
     <span className="brand-mark" aria-hidden="true">
-      <i className="brand-dot blue" />
-      <i className="brand-dot red" />
-      <i className="brand-dot yellow" />
-      <i className="brand-dot green" />
+      <img src="/sfhacks-logo.png" alt="" />
     </span>
   );
 }
