@@ -37,8 +37,8 @@ export default function Home() {
           <span className="color-word">Hackathon</span>
         </h1>
         <p className="hero-copy">
-          A focused, one-day mini hackathon from SF Hacks and Google Developer
-          Groups—made for curious builders in the Bay Area.
+          SF Hacks brings its builder-first energy to a focused, one-day AI
+          hackathon—created with GDG for curious minds across the Bay Area.
         </p>
         <div className="hero-actions">
           <a className="button button-primary" href={APPLY_URL} target="_blank" rel="noreferrer">
@@ -62,6 +62,9 @@ export default function Home() {
             <div><span>WHEN</span><strong>9:00 AM — 9:00 PM</strong></div>
             <div><span>WHERE</span><strong>San Francisco · Venue TBA</strong></div>
           </div>
+          <div className="skyline-mark" aria-hidden="true">
+            <i /><i /><i /><i /><i /><i /><i />
+          </div>
         </div>
       </section>
 
@@ -69,8 +72,8 @@ export default function Home() {
         <p className="section-label">SMALL BY DESIGN</p>
         <h2>Less ceremony.<br />More making.</h2>
         <p>
-          Meet smart people, get hands-on support from the GDG community, and
-          turn a fresh idea into a working demo—all in a single, high-energy day.
+          Meet smart people, build in the spirit of SF Hacks, and get hands-on
+          support from the GDG community—all in one high-energy day.
         </p>
       </section>
 
