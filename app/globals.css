@@ -179,7 +179,7 @@ h1 { display: flex; align-items: baseline; justify-content: center; gap: .15em; 
 .final-cta h2 { font-size: clamp(60px, 7vw, 96px); line-height: .92; letter-spacing: -.07em; margin: 0 0 38px; }
 /* "Apply now" is a raised key: it sits on a solid edge and sinks flush when pressed. No hover lift. */
 .button-light { background: #fff; color: var(--ink); min-width: 150px; --lift: 4px; --edge: #bdbdc2; transform: translateY(calc(-1 * var(--lift))); box-shadow: 0 var(--lift) 0 var(--edge), 0 calc(var(--lift) + 8px) 22px rgba(0,0,0,.35); transition: transform .18s cubic-bezier(.2,.8,.2,1), box-shadow .18s cubic-bezier(.2,.8,.2,1); }
-.button-light:hover { transform: translateY(calc(-1 * var(--lift))); }
+.button-light:hover { --lift: 2px; transform: translateY(calc(-1 * var(--lift))); }
 .button-light:active { --lift: 0px; transition-duration: .06s; }
 footer { min-height: 180px; display: flex; align-items: center; justify-content: space-between; color: var(--muted); font-size: 13px; }
 footer .wordmark { color: var(--ink); }
