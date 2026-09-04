@@ -103,10 +103,9 @@ export default function Home() {
         <p className="microcopy"><span className="status-dot" />Applications open <span>·</span> Free to attend</p>
 
         <div className="event-panel" id="details">
-          <div className="date-tile">
-            <span>OCT</span>
+          <div className="date-mark" aria-label="October 2, 2026">
             <strong>02</strong>
-            <span>2026</span>
+            <span><b>OCT</b>2026</span>
           </div>
           <div className="event-heading">
             <span className="kicker">Friday in San Francisco</span>
