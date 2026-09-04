@@ -31,130 +31,139 @@ function GdgMark() {
   );
 }
 
-function CampusMap() {
+function Chevron() {
   return (
-    <section className="campus-map shell" id="map" aria-labelledby="campus-map-title">
-      <div className="map-heading">
-        <div>
-          <p className="section-label">THE VENUE</p>
-          <h2 id="campus-map-title">Find Annex 1.</h2>
-        </div>
-        <div className="map-heading-side">
-          <p>San Francisco State University<br />Annex 1</p>
-          <div className="map-links" aria-label="Open location in a maps app">
-            <a href="https://maps.apple.com/?q=Annex+1%2C+San+Francisco+State+University" target="_blank" rel="noreferrer">Apple Maps</a>
-            <a className="map-link-primary" href="https://www.google.com/maps/search/?api=1&query=San+Francisco+State+University+Annex+1" target="_blank" rel="noreferrer">Google Maps</a>
-          </div>
-        </div>
-      </div>
-      <div className="google-map">
-        <iframe
-          title="Google Maps location for San Francisco State University Annex 1"
-          src="https://www.google.com/maps?q=San+Francisco+State+University+Annex+1&z=17&output=embed"
-          loading="lazy"
-          allowFullScreen
-          referrerPolicy="no-referrer-when-downgrade"
-        />
-      </div>
-    </section>
+    <svg className="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+      <path d="M3 6l5 5 5-5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
   );
 }
 
 export default function Home() {
   return (
     <main>
-      <nav className="nav shell" aria-label="Main navigation">
-        <a className="wordmark" href="#top" aria-label="SF Hacks mini home">
-          <BrandMark />
-          <span className="nav-divider" />
-          <GdgMark />
-        </a>
-
-        <div className="nav-links">
-          <a href="#details">Details</a>
-          <a href="#map">Map</a>
-          <a href="#faqs">FAQs</a>
-          <a className="nav-apply" href={APPLY_URL} target="_blank" rel="noreferrer">
-            Apply
+      <div className="nav-wrap shell">
+        <nav className="nav" aria-label="Main navigation">
+          <a className="wordmark" href="#top" aria-label="SF Hacks × GDG home">
+            <BrandMark />
+            <span className="nav-divider" />
+            <GdgMark />
           </a>
-        </div>
-      </nav>
-
-      <section className="hero shell" id="top">
-        <div className="eyebrow"><span>SF Hacks</span><span className="eyebrow-x">×</span><span>GDG</span></div>
-        <h1>
-          <span className="title-ai">AI</span>
-          <span>Hackathon</span>
-        </h1>
-        <p className="hero-copy">
-          One day. One team. Build with AI.
-        </p>
-        <div className="hero-facts" aria-label="Event date, time, and location">
-          <span><small>Date</small><strong>Oct 02</strong></span>
-          <span><small>Hours</small><strong>9 AM to 7 PM</strong></span>
-          <span><small>Place</small><strong>San Francisco State University, Annex 1</strong></span>
-        </div>
-        <div className="hero-actions">
-          <a className="button button-primary" href={APPLY_URL} target="_blank" rel="noreferrer">
-            Apply to hack
-          </a>
-          <a className="button button-secondary" href="#details">See the details</a>
-        </div>
-        <p className="microcopy"><span className="status-dot" />Applications open <span>·</span> Free to attend</p>
-
-        <div className="event-panel" id="details">
-          <div className="date-tile">
-            <span>OCT</span>
-            <strong>02</strong>
-            <span>2026</span>
+          <div className="nav-links">
+            <a href="#details">Details</a>
+            <a href="#venue">Venue</a>
+            <a href="#faqs">FAQ</a>
+            <a className="nav-apply" href={APPLY_URL} target="_blank" rel="noreferrer">
+              Apply
+            </a>
           </div>
-          <div className="event-heading">
-            <span className="kicker">Friday in San Francisco</span>
-            <h2>10 hours. Build. Ship.</h2>
+        </nav>
+      </div>
+
+      <div className="column" id="top">
+        <section className="hero">
+          <p className="hero-by">SF Hacks and Google Developer Groups present</p>
+          <h1>AI Hackathon</h1>
+          <p className="lede">
+            One day. One team. Build with AI. Ten hours to turn an idea into something that works,
+            alongside other builders, mentors, and the GDG community in San Francisco.
+          </p>
+          <div className="actions">
+            <a className="button button-primary" href={APPLY_URL} target="_blank" rel="noreferrer">
+              Apply to hack
+            </a>
+            <a className="button button-secondary" href="#details">See the details</a>
           </div>
-          <div className="event-meta">
-            <div><span>WHEN</span><strong>9:00 AM — 7:00 PM</strong></div>
-            <div><span>WHERE</span><strong>San Francisco State University, Annex 1</strong></div>
+          <p className="note">Free to attend. Applications are open.</p>
+        </section>
+
+        <section className="card facts" id="details" aria-label="Event date, time, and location">
+          <div className="fact">
+            <span className="tag tag-blue">Date</span>
+            <div>
+              <strong>Friday, Oct 02, 2026</strong>
+              <p>A single day, so plan to stay for all of it.</p>
+            </div>
           </div>
-        </div>
-      </section>
+          <div className="fact">
+            <span className="tag tag-green">Hours</span>
+            <div>
+              <strong>9 AM to 7 PM</strong>
+              <p>Ten hours to build, with demos at the end of the day.</p>
+            </div>
+          </div>
+          <div className="fact">
+            <span className="tag tag-red">Place</span>
+            <div>
+              <strong>San Francisco State University, Annex 1</strong>
+              <p>1600 Holloway Ave, San Francisco.</p>
+            </div>
+          </div>
+          <div className="fact">
+            <span className="tag tag-yellow">Teams</span>
+            <div>
+              <strong>Solo or up to four</strong>
+              <p>Join with friends or find teammates at the event.</p>
+            </div>
+          </div>
+        </section>
 
-      <CampusMap />
+        <section className="venue" id="venue" aria-labelledby="venue-title">
+          <h2 id="venue-title">Find Annex 1</h2>
+          <p className="section-copy">
+            Annex 1 is on the north side of the SF State campus. Open the map in your maps app for
+            walking, transit, or driving directions.
+          </p>
+          <div className="card map-card">
+            <iframe
+              title="Google Maps location for San Francisco State University Annex 1"
+              src="https://www.google.com/maps?q=San+Francisco+State+University+Annex+1&z=17&output=embed"
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+          <div className="map-links" aria-label="Open location in a maps app">
+            <a href="https://www.google.com/maps/search/?api=1&query=San+Francisco+State+University+Annex+1" target="_blank" rel="noreferrer">Open in Google Maps</a>
+            <a href="https://maps.apple.com/?q=Annex+1%2C+San+Francisco+State+University" target="_blank" rel="noreferrer">Open in Apple Maps</a>
+          </div>
+        </section>
 
-      <section className="faq shell" id="faqs">
-        <div className="faq-intro">
-          <p className="section-label">NEED TO KNOW</p>
-          <h2>FAQs</h2>
-        </div>
-        <div className="faq-list">
-          {FAQS.map(([question, answer], index) => (
-            <details key={question}>
-              <summary>
-                <span className="faq-number">{String(index + 1).padStart(2, "0")}</span>
-                <span>{question}</span>
-              </summary>
-              <p>
-                {question === "Is there a code of conduct?" ? (
-                  <>Yes. Everyone must follow the <a href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md" target="_blank" rel="noreferrer">MLH Code of Conduct</a>.</>
-                ) : question === "How can I contact the team?" ? (
-                  <>Email <a href="mailto:sfhacksteam@gmail.com">sfhacksteam@gmail.com</a>.</>
-                ) : answer}
-              </p>
-            </details>
-          ))}
-        </div>
-      </section>
+        <section className="faq" id="faqs" aria-labelledby="faq-title">
+          <h2 id="faq-title">Questions</h2>
+          <p className="section-copy">Anything else, email us and we’ll get back to you.</p>
+          <div className="card faq-list">
+            {FAQS.map(([question, answer]) => (
+              <details key={question}>
+                <summary>
+                  <span>{question}</span>
+                  <Chevron />
+                </summary>
+                <p>
+                  {question === "Is there a code of conduct?" ? (
+                    <>Yes. Everyone must follow the <a href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md" target="_blank" rel="noreferrer">MLH Code of Conduct</a>.</>
+                  ) : question === "How can I contact the team?" ? (
+                    <>Email <a href="mailto:sfhacksteam@gmail.com">sfhacksteam@gmail.com</a>.</>
+                  ) : answer}
+                </p>
+              </details>
+            ))}
+          </div>
+        </section>
 
-      <section className="final-cta shell">
-        <h2>Build<br />with us.</h2>
-        <a className="button button-light" href={APPLY_URL} target="_blank" rel="noreferrer">
-          Apply now
-        </a>
-      </section>
+        <section className="final" aria-labelledby="final-title">
+          <h2 id="final-title">Build with us on Oct 2.</h2>
+          <div className="actions">
+            <a className="button button-primary" href={APPLY_URL} target="_blank" rel="noreferrer">
+              Apply now
+            </a>
+          </div>
+        </section>
+      </div>
 
       <footer className="shell">
         <div className="wordmark"><BrandMark /><span>SF Hacks × GDG</span></div>
-        <p>San Francisco · 2026</p>
+        <p>San Francisco, 2026</p>
         <a href="mailto:sfhacksteam@gmail.com">sfhacksteam@gmail.com</a>
       </footer>
     </main>
