@@ -103,17 +103,17 @@ export default function Home() {
         <p className="microcopy"><span className="status-dot" />Applications open <span>·</span> Free to attend</p>
 
         <div className="event-panel" id="details">
-          <div className="date-mark" aria-label="October 2, 2026">
-            <strong>02</strong>
-            <span><b>OCT</b>2026</span>
-          </div>
-          <div className="event-heading">
-            <span className="kicker">Friday in San Francisco</span>
+          <p className="section-label">THE DAY</p>
+          <div className="event-row">
+            <div className="date-mark" aria-label="October 2, 2026">
+              <strong>02</strong>
+              <span>Oct<br />2026</span>
+            </div>
             <h2>10 hours. Build. Ship.</h2>
-          </div>
-          <div className="event-meta">
-            <div><span>WHEN</span><strong>9:00 AM — 7:00 PM</strong></div>
-            <div><span>WHERE</span><strong>San Francisco State University, Annex 1</strong></div>
+            <div className="event-meta">
+              <strong>Friday, 9:00 AM — 7:00 PM</strong>
+              <span>San Francisco State University, Annex 1</span>
+            </div>
           </div>
         </div>
       </section>
