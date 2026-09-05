@@ -87,7 +87,7 @@ export default function Home() {
           <span>Hackathon</span>
         </h1>
         <p className="hero-copy">
-          One day. One team. Build with AI.
+          Hosted with support from SFSU AI Student Commons.
         </p>
         <div className="hero-facts" aria-label="Event date, time, and location">
           <span><small>Date</small><strong>Oct 02</strong></span>
