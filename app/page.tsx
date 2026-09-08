@@ -1,4 +1,4 @@
-const APPLY_URL = "https://app.sfhacks.io/";
+const APPLY_URL = "https://app.sfhacks.io/events/gdg";
 
 const FAQS = [
   ["What is a hackathon?", "A short build sprint where people team up and turn ideas into working projects."],
