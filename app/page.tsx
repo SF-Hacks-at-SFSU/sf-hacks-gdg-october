@@ -92,7 +92,7 @@ export default function Home() {
         <div className="hero-actions">
           <a className="button button-secondary" href="#details">See the details</a>
         </div>
-        <p className="microcopy">Applications closed <span>·</span> Free to attend</p>
+        <p className="microcopy">Applications closed</p>
 
         <div className="event-panel" id="details">
           <p className="section-label">THE DAY</p>
