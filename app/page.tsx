@@ -1,5 +1,3 @@
-const APPLY_URL = "https://app.sfhacks.io/events/gdg";
-
 const FAQS = [
   ["What is a hackathon?", "A short build sprint where people team up and turn ideas into working projects."],
   ["Can beginners participate?", "Yes. No hackathon experience is required."],
@@ -74,9 +72,6 @@ export default function Home() {
           <a href="#details">Details</a>
           <a href="#map">Map</a>
           <a href="#faqs">FAQs</a>
-          <a className="nav-apply" href={APPLY_URL} target="_blank" rel="noreferrer">
-            Apply
-          </a>
         </div>
       </nav>
 
@@ -95,12 +90,9 @@ export default function Home() {
           <span><small>Place</small><strong>San Francisco State University, Annex 1</strong></span>
         </div>
         <div className="hero-actions">
-          <a className="button button-primary" href={APPLY_URL} target="_blank" rel="noreferrer">
-            Apply to hack
-          </a>
           <a className="button button-secondary" href="#details">See the details</a>
         </div>
-        <p className="microcopy"><span className="status-dot" />Applications open <span>·</span> Free to attend</p>
+        <p className="microcopy">Applications closed <span>·</span> Free to attend</p>
 
         <div className="event-panel" id="details">
           <p className="section-label">THE DAY</p>
@@ -145,10 +137,7 @@ export default function Home() {
       </section>
 
       <section className="final-cta shell">
-        <h2>Build<br />with us.</h2>
-        <a className="button button-light" href={APPLY_URL} target="_blank" rel="noreferrer">
-          Apply now
-        </a>
+        <h2>See you<br />at the hack.</h2>
       </section>
 
       <footer className="shell">
